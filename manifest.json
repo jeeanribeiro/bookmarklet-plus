@@ -1,0 +1,12 @@
+{
+	"name": "bookmarklet-plus",
+	"version": "1.0",
+	"description": "Bookmarklets improved experience",
+	"manifest_version": 2,
+	"permissions": ["storage"],
+	"default_locale": "en",
+	"author": "Jean Ribeiro",
+	"browser_action": {
+		"default_popup": "popup.html"
+	}
+}

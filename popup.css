@@ -1,0 +1,134 @@
+/* Global */
+
+html, body {
+	color: #333;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 14px;
+	margin: 0;
+	height: 300px;
+	padding: 0;
+	position: relative;
+	max-width: 300px;
+}
+
+ul {
+	margin: 0;
+	padding-left: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+
+.modal-header {
+	background-color: #777;
+	color: white;
+}
+
+.logo {
+	text-align: center;	
+}
+
+/* Content */
+
+.folder-details,
+.script {
+	border-width: 0 1px 1px 1px;
+	border-style: solid;
+	border-color: #ccc;
+	cursor: pointer;
+	background-color: #fff;
+	transition-duration: 0.3s;
+	padding: 5px;
+}
+
+.script {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+
+.folder-details:hover,
+.script:hover {
+	background-color: #eee;
+}
+
+.folder-details {
+	display: flex;
+	justify-content: space-between;
+}
+
+.folder-name {
+	cursor: text;
+}
+
+i {
+	color: #999;
+	transition-duration: 0.3s;
+}
+
+i:not(:last-child) {
+	margin-right: 5px;
+}
+
+i:hover {
+	color: #777;
+}
+
+/* Footer */
+
+.modal-footer {
+	align-items: center;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	width: 100%;
+}
+
+.add-folder,
+.add-script,
+.cancel-script,
+.save-script {
+	align-items: center;
+	background-color: #999;
+	color: white;
+	cursor: pointer;
+	flex: 1;
+	text-align: center;
+	transition-duration: 0.3s;
+}
+
+.add-folder,
+.cancel-script {
+	border-right: 1px solid white;
+}
+
+.add-folder:hover,
+.add-script:hover,
+.cancel-script:hover,
+.save-script:hover {
+	background-color: #777;
+}
+
+/* Script editor */
+
+.script-editor {
+	display: flex;
+	flex-direction: column;
+}
+
+.script-name,
+.script-content {
+	margin: 10px 10px 0 10px;
+}
+
+.script-content {
+	height: 160px;
+	resize: none;
+	white-space: nowrap;
+}
